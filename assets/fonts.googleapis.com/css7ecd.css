@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Sumana';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sumana'), local('Sumana-Regular'), url(https://fonts.gstatic.com/s/sumana/v3/4UaDrE5TqRBjGj-29xLm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sumana';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Sumana Bold'), local('Sumana-Bold'), url(https://fonts.gstatic.com/s/sumana/v3/4UaArE5TqRBjGj--TDf24I3J.ttf) format('truetype');
+}
