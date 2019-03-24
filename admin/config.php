@@ -20,7 +20,7 @@
     // To Get Base Url
     function base_url() {
         if ($_SERVER['SERVER_NAME'] === "localhost") {
-            $base = "http://localhost/laxmi_sri/admin";
+            $base = "http://localhost/laxmisri/admin";
             return $base;
         } else {
             $base = "http://laxmisri.com/";
