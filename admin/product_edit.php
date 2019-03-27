@@ -41,12 +41,6 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-12">Product Images</label>
-                                        <div class="col-md-12">
-                                            <input type="file" name="product_img[]" id="product_img[]" class="form-control form-control-line" multiple>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
                                         <div class="col-md-6">
                                             <label for="price" >Product price</label>
                                             <input type="text" class="form-control form-control-line"  name="price" id="price">
@@ -113,7 +107,7 @@
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-12">
-                                            <button class="btn btn-success">Add product</button>
+                                            <button class="btn btn-success">Update product</button>
                                         </div>
                                     </div>
                                 </form>
