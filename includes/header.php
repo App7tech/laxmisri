@@ -74,7 +74,7 @@
                                                                                         <div class="col-sm-12 hover-menu">
                                                                                             <ul> ';
                                                                     }
-                                                                    echo '<li><a href="#" class="text-capitalize">'.$row['category_name'].'</a></li>';
+                                                                    echo '<li><a href="products.php?category='.$row["category_id"].'" class="text-capitalize">'.$row['category_name'].'</a></li>';
                                                                     if($iterate == 10 || $iterate == 20 || $iterate == 30 || $iterate == 40){
                                                                         echo '              </ul>
                                                                                         </div>
