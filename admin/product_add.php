@@ -62,14 +62,14 @@
 		$images = serialize($images);
 		$offer_price = 0;
 		if(isset($_POST['offer_price'])){
-			$order_price = $_POST['offer_price'];
+			$offer_price = $_POST['offer_price'];
 		}
         $date_time = date('Y-m-d H:i:s');
 		$dbhandle = db_connect();
-		$sql = "INSERT INTO `products`(`name`, `description`, `price`, `offer_price`, `category_id`, `social_links`, `images`, `featured`, `offer`, `status`, `date_time`) VALUES ('$product_text','$description','$price','$offer_price','$category','$social_links','$images','$featured','$offer','1','$date_time')";
+		echo $sql = "INSERT INTO `products`(`name`, `description`, `price`, `offer_price`, `category_id`, `social_links`, `images`, `featured`, `offer`, `status`, `date_time`) VALUES ('$product_text','$description','$price','$offer_price','$category','$social_links','$images','$featured','$offer','1','$date_time')";
 		$product = mysqli_query($dbhandle,$sql);
 		if($product){
-			echo "<script>alert('product Added Successfully'); window.location='products.php'</script>";
+			// echo "<script>alert('product Added Successfully'); window.location='products.php'</script>";
 		}else{
 			echo "<script>alert('Failed to add product'); window.location='products.php'</script>";
 		}
