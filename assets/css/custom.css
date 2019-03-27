@@ -1,4 +1,5 @@
 .custom-prod-page-image img{
     height: 200px !important;
     object-fit: contain !important;
+    width: 100% !important;
 }

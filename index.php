@@ -230,11 +230,25 @@
 				<div class="b-products b-product_grid b-product_grid_four mb-4">
 					<div class="container">
 						<div class="row clearfix owl-carousel owl-theme" id="b-product_carousel">
+							<?php 
+                                $sql = "SELECT * FROM `products` WHERE featured='1'";
+                                $product = mysqli_query($dbhandle,$sql);
+                                $iterate = 1;
+                                $image_path = 'assets/images/';
+                                if(mysqli_num_rows($product)>0){
+                                    while($row = mysqli_fetch_array($product)){
+                                        $product_images = unserialize($row['images']);
+                                        if(count($product_images)<=0){
+                                            $image = $image_path.'noImage.jpg';
+                                        }else{
+                                            $image = $image_path.'products/'.$product_images[0];
+                                        }
+                            ?>
 							<div class="pl-2 pr-2">
 								<div class="b-product_grid_single">
-									<div class="b-product_grid_header">
+									<div class="b-product_grid_header custom-prod-page-image">
 										<a href="#">
-										<img data-src="assets/images/products/home-furniture/product_grid_01_01.jpg, assets/images/products/home-furniture/product_grid_01_02.jpg" src="assets/images/products/home-furniture/product_grid_01_01.jpg" class="img-fluid img-switch d-block" alt="" style="">
+										<img data-src="<?=$image?>" src="<?=$image?>" class="img-fluid img-switch d-block" alt="" style="">
 										</a> 
 										<div class="b-product_grid_action">
 										<a href="javascript:void(0)" data-whishurl="whishlist.html" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to Whishlist">
@@ -250,14 +264,14 @@
 									</div>
 									<div class="b-product_grid_info">
 										<h3 class="product-title">
-											<a href="#">Yovlastic Side Chair</a>
+											<a href="#"><?=$row['name']?></a>
 										</h3>
 										<div class="clearfix">
 										<div class="b-product_grid_toggle float-left">
-											<span class="b-price">$120</span>
+											<span class="b-price">Rs: <?=$row['price']?></span>
 											<span class="b-add_cart">
 												<i class="icon-basket icons"></i>
-												<a href="#">Select Options</a>
+												<a href="#">Rs: <?=$row['price']?></a>
 											</span>
 										</div>
 										<div class="b-product_options float-right">
@@ -273,177 +287,11 @@
 										</div>
 									</div>
 								</div>
-							</div> 
-							<div class="pl-2 pr-2">
-								<div class="b-product_grid_single">
-									<div class="b-product_grid_header">
-										<a href="#">
-										<img data-src="assets/images/products/home-furniture/product_grid_02_01.jpg, assets/images/products/home-furniture/product_grid_02_02.jpg" src="assets/images/products/home-furniture/product_grid_02_01.jpg" class="img-fluid img-switch d-block" alt="" style="">
-										</a> 
-										<div class="b-product_grid_action">
-										<a href="javascript:void(0)" data-whishurl="whishlist.html" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to Whishlist">
-											<i class="icon-heart icons b-add_to_whish">
-											<img src="assets/images/products/product_loading.gif" class="g-loading_gif" alt="">
-											</i>
-										</a>
-										<i data-toggle="tooltip" data-placement="left" title="" class="icon-refresh icons" data-original-title="Compare"></i>
-										<a href="javascript:void(0);" data-toggle="modal" data-target="#b-qucik_view">
-											<i data-toggle="tooltip" data-placement="left" title="" class="icon-magnifier-add icons" data-original-title="Quick View"></i>
-										</a>
-										</div>
-									</div>
-									<div class="b-product_grid_info">
-										<h3 class="product-title">
-											<a href="#">Yovlastic Side Chair</a>
-										</h3>
-										<div class="clearfix">
-										<div class="b-product_grid_toggle float-left">
-											<span class="b-price">$120</span>
-											<span class="b-add_cart">
-												<i class="icon-basket icons"></i>
-												<a href="#">Add to cart</a>
-											</span>
-										</div> 
-										</div>
-									</div>
-								</div>
-							</div> 
-							<div class="pl-2 pr-2">
-								<div class="b-product_grid_single">
-									<div class="b-product_grid_header">
-										<a href="#">
-										<img data-src="assets/images/products/home-furniture/product_grid_03_01.jpg, assets/images/products/home-furniture/product_grid_03_02.jpg" src="assets/images/products/home-furniture/product_grid_03_01.jpg" class="img-fluid img-switch d-block" alt="" style="">
-										</a> 
-										<div class="b-product_grid_action">
-										<a href="javascript:void(0)" data-whishurl="whishlist.html" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to Whishlist">
-											<i class="icon-heart icons b-add_to_whish">
-											<img src="assets/images/products/product_loading.gif" class="g-loading_gif" alt="">
-											</i>
-										</a>
-										<i data-toggle="tooltip" data-placement="left" title="" class="icon-refresh icons" data-original-title="Compare"></i>
-										<a href="javascript:void(0);" data-toggle="modal" data-target="#b-qucik_view">
-											<i data-toggle="tooltip" data-placement="left" title="" class="icon-magnifier-add icons" data-original-title="Quick View"></i>
-										</a>
-										</div>
-									</div>
-									<div class="b-product_grid_info">
-										<h3 class="product-title">
-											<a href="#">Yovlastic Side Chair</a>
-										</h3>
-										<div class="clearfix">
-										<div class="b-product_grid_toggle float-left">
-											<span class="b-price">$120</span>
-											<span class="b-add_cart">
-												<i class="icon-basket icons"></i>
-												<a href="#">Add to cart</a>
-											</span>
-										</div> 
-										</div>
-									</div>
-								</div>
-							</div> 
-							<div class="pl-2 pr-2">
-								<div class="b-product_grid_single">
-									<div class="b-product_grid_header">
-										<a href="#">
-										<img data-src="assets/images/products/home-furniture/product_grid_04_01.jpg, assets/images/products/home-furniture/product_grid_04_02.jpg" src="assets/images/products/home-furniture/product_grid_04_01.jpg" class="img-fluid img-switch d-block" alt="" style="">
-										</a> 
-										<div class="b-product_grid_action">
-										<a href="javascript:void(0)" data-whishurl="whishlist.html" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to Whishlist">
-											<i class="icon-heart icons b-add_to_whish">
-											<img src="assets/images/products/product_loading.gif" class="g-loading_gif" alt="">
-											</i>
-										</a>
-										<i data-toggle="tooltip" data-placement="left" title="" class="icon-refresh icons" data-original-title="Compare"></i>
-										<a href="javascript:void(0);" data-toggle="modal" data-target="#b-qucik_view">
-											<i data-toggle="tooltip" data-placement="left" title="" class="icon-magnifier-add icons" data-original-title="Quick View"></i>
-										</a>
-										</div>
-									</div>
-									<div class="b-product_grid_info">
-										<h3 class="product-title">
-											<a href="#">Yovlastic Side Chair</a>
-										</h3>
-										<div class="clearfix">
-										<div class="b-product_grid_toggle float-left">
-											<span class="b-price">$120</span>
-											<span class="b-add_cart">
-												<i class="icon-basket icons"></i>
-												<a href="#">Add to cart</a>
-											</span>
-										</div> 
-										</div>
-									</div>
-								</div>
 							</div>
-							<div class="pl-2 pr-2">
-								<div class="b-product_grid_single">
-									<div class="b-product_grid_header">
-										<a href="#">
-										<img data-src="assets/images/products/home-furniture/product_grid_05_01.jpg, assets/images/products/home-furniture/product_grid_05_02.jpg" src="assets/images/products/home-furniture/product_grid_05_01.jpg" class="img-fluid img-switch d-block" alt="" style="">
-										</a> 
-										<div class="b-product_grid_action">
-										<a href="javascript:void(0)" data-whishurl="whishlist.html" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to Whishlist">
-											<i class="icon-heart icons b-add_to_whish">
-											<img src="assets/images/products/product_loading.gif" class="g-loading_gif" alt="">
-											</i>
-										</a>
-										<i data-toggle="tooltip" data-placement="left" title="" class="icon-refresh icons" data-original-title="Compare"></i>
-										<a href="javascript:void(0);" data-toggle="modal" data-target="#b-qucik_view">
-											<i data-toggle="tooltip" data-placement="left" title="" class="icon-magnifier-add icons" data-original-title="Quick View"></i>
-										</a>
-										</div>
-									</div>
-									<div class="b-product_grid_info">
-										<h3 class="product-title">
-											<a href="#">Yovlastic Side Chair</a>
-										</h3>
-										<div class="clearfix">
-										<div class="b-product_grid_toggle float-left">
-											<span class="b-price">$120</span>
-											<span class="b-add_cart">
-												<i class="icon-basket icons"></i>
-												<a href="#">Add to cart</a>
-											</span>
-										</div> 
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="pl-2 pr-2">
-								<div class="b-product_grid_single">
-									<div class="b-product_grid_header">
-										<a href="#">
-										<img data-src="assets/images/products/home-furniture/product_grid_06_01.jpg, assets/images/products/home-furniture/product_grid_06_02.jpg" src="assets/images/products/home-furniture/product_grid_06_01.jpg" class="img-fluid img-switch d-block" alt="" style="">
-										</a> 
-										<div class="b-product_grid_action">
-										<a href="javascript:void(0)" data-whishurl="whishlist.html" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to Whishlist">
-											<i class="icon-heart icons b-add_to_whish">
-											<img src="assets/images/products/product_loading.gif" class="g-loading_gif" alt="">
-											</i>
-										</a>
-										<i data-toggle="tooltip" data-placement="left" title="" class="icon-refresh icons" data-original-title="Compare"></i>
-										<a href="javascript:void(0);" data-toggle="modal" data-target="#b-qucik_view">
-											<i data-toggle="tooltip" data-placement="left" title="" class="icon-magnifier-add icons" data-original-title="Quick View"></i>
-										</a>
-										</div>
-									</div>
-									<div class="b-product_grid_info">
-										<h3 class="product-title">
-											<a href="#">Yovlastic Side Chair</a>
-										</h3>
-										<div class="clearfix">
-										<div class="b-product_grid_toggle float-left">
-											<span class="b-price">$120</span>
-											<span class="b-add_cart">
-												<i class="icon-basket icons"></i>
-												<a href="#">Add to cart</a>
-											</span>
-										</div> 
-										</div>
-									</div>
-								</div>
-							</div>
+							<?php
+									} //while close
+								} //if close
+							?>
 						</div>
 					</div>
 				</div>        
