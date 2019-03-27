@@ -270,7 +270,6 @@
 										<div class="b-product_grid_toggle float-left">
 											<span class="b-price">Rs: <?=$row['price']?></span>
 											<span class="b-add_cart">
-												<i class="icon-basket icons"></i>
 												<a href="#">Rs: <?=$row['price']?></a>
 											</span>
 										</div>
