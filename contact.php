@@ -5,8 +5,10 @@
   	</head>
     <body>   
         <!-- wrapper div start -->
-		<?php include_once('includes/header.php'); ?>
-            <div class="b-map">
+	   <?php include_once('includes/header.php'); ?>
+		<div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60923.98860367782!2d78.472009!3d17.375793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1038dc8dc4177e43!2sLaxmi+Sri+Art+Jewellers%2FLAXMI+SRI+COLLECTIONS!5e0!3m2!1sen!2sus!4v1553820864123!5m2!1sen!2sus" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></div></div>
+            
+            <!--<div class="b-map">
               <div id="b-map" class="b-map_in"></div>
               <div class="b-map_over">
                 <h3>VISIT OUR NEW STORE IN NEW YORK</h3>
@@ -17,7 +19,7 @@
                 </p>
                 <a href="#">Contact Us</a>
               </div>
-            </div>
+            </div>-->
             <div class="b-contact b-contact_light pt-5 mt-4">
               <div class="container">
                 <div class="row clearfix">
@@ -60,8 +62,13 @@
                     <div class="b-title b-title_line_righ mt-5 mt-lg -0">
                       <h2 class="text-uppercase">information about us</h2>
                     </div>
-                    <p>Consectetur aliquet a erat per sem nisi leo placerat dui a adipiscing a sagittis vestibulum. Sagittis posuere id nam quis vestibulum faucibus a est tristique ridiculus sed.</p>
-                    <p>Sagittis posuere id nam quis vestibulum vestibulum a facilisi at elit hendrerit scelerisque sodales nam dis orci non aliquet enim.</p>
+                    <p style="text-align:justify;">We are an emerging organization gaining recognition among our clients as a quality manufacturer, supplier and exporter of Imitation Jewellery Items such
+                    as Fashion Jewellery and Antique Jewellery. The products we design are innovative and add a royal touch to the interiors and the wearers. We believe in
+                    offering true value for money to our clients by providing them a range that exudes elegance and extravagance.
+
+                     Our range has a rich look & feel but is moderately priced, and is available in various options. We take care of each and every demand of the
+                     clients and make sure that the products are timely delivered.</p>
+                   <!-- <p>Sagittis posuere id nam quis vestibulum vestibulum a facilisi at elit hendrerit scelerisque sodales nam dis orci non aliquet enim.</p>-->
                     <div class="b-title b-title_line_right">
                       <h2 class="text-uppercase">contact us</h2>
                     </div>
@@ -73,7 +80,7 @@
                             <p class="pull-left mb-0">
                               Tel: +91 9949551967 <br>
                               whatsapp:+91 9701220379<br>
-                              E-Mail:laxmisriartjewellers@gmail.com 
+                              E-Mail:laxmisriart2@gmail.com 
                             </p>
                           </div>
                         </div>
@@ -88,9 +95,9 @@
                             </p>
                           </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <!--<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                           <div class="clearfix mb-5">
-                            <!--<i class="icon-cursor icons pull-left mr-4 b-icon_large"></i>-->
+                            <!--<i class="icon-cursor icons pull-left mr-4 b-icon_large"></i>
                             <p class="pull-left mb-0">
                               Free standard shipping <br>
                               on all orders in New York.
@@ -99,13 +106,13 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                           <div class="clearfix mb-5">
-                           <!-- <i class="icon-rocket icons pull-left mr-4 b-icon_large"></i>-->
+                           <!-- <i class="icon-rocket icons pull-left mr-4 b-icon_large"></i>
                             <p class="pull-left mb-0">
                               Support forum provide <br>
                               for over 24h, every day
                             </p>
                           </div>
-                        </div>
+                        </div>-->
                       </div>
                     </div>
                     <div class="b-blog_social b-socail_color mt-0 pb-5">
