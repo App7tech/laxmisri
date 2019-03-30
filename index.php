@@ -96,7 +96,7 @@
 							data-paddingright="[0,0,0,0]" 
 							data-paddingbottom="[0,0,0,0]" 
 							data-paddingleft="[0,0,0,0]" >
-							<a href="#" class="btn btn-full">LEARN MORE</a>
+							<a href="#" class="btn btn-full">See Offer</a>
 						</div>   
 					</li>
 					<?php
@@ -238,7 +238,8 @@
                                 if(mysqli_num_rows($product)>0){
                                     while($row = mysqli_fetch_array($product)){
                                         $product_images = unserialize($row['images']);
-                                        if(count($product_images)<=0){
+										$links = unserialize($row['social_links']);
+										if(count($product_images)<=0){
                                             $image = $image_path.'noImage.jpg';
                                         }else{
                                             $image = $image_path.'products/'.$product_images[0];
@@ -247,40 +248,43 @@
 							<div class="pl-2 pr-2">
 								<div class="b-product_grid_single">
 									<div class="b-product_grid_header custom-prod-page-image">
-										<a href="#">
+										<a href="product-view.php?product=<?=$row['product_id']?>">
 										<img data-src="<?=$image?>" src="<?=$image?>" class="img-fluid img-switch d-block" alt="" style="">
-										</a> 
-										<div class="b-product_grid_action">
-										<a href="javascript:void(0)" data-whishurl="whishlist.html" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to Whishlist">
-											<i class="icon-heart icons b-add_to_whish">
-											<img src="assets/images/products/product_loading.gif" class="g-loading_gif" alt="">
-											</i>
 										</a>
-										<i data-toggle="tooltip" data-placement="left" title="" class="icon-refresh icons" data-original-title="Compare"></i>
-										<a href="javascript:void(0);" data-toggle="modal" data-target="#b-qucik_view">
-											<i data-toggle="tooltip" data-placement="left" title="" class="icon-magnifier-add icons" data-original-title="Quick View"></i>
-										</a>
-										</div>
 									</div>
 									<div class="b-product_grid_info">
 										<h3 class="product-title">
-											<a href="#"><?=$row['name']?></a>
+											<a href="product-view.php?product=<?=$row['product_id']?>"><?=$row['name']?></a>
 										</h3>
 										<div class="clearfix">
 										<div class="b-product_grid_toggle float-left">
 											<span class="b-price">Rs: <?=$row['price']?></span>
 											<span class="b-add_cart">
-												<a href="#">Rs: <?=$row['price']?></a>
+												<a href="product-view.php?product=<?=$row['product_id']?>">Rs: <?=$row['price']?></a>
 											</span>
 										</div>
 										<div class="b-product_options float-right">
 											<ul class="pl-0 mb-0 list-unstyled">
 												<li>
-												<span data-toggle="tooltip" title="" class="b-black" data-original-title="Black"></span>
+													<a href="<?=$links['facebook']?>" target="_blank"><span data-toggle="tooltip" title="" data-original-title="Facebook">
+													<i class="fab fa-facebook-f"></i></span></a>
 												</li>
 												<li>
-												<span data-toggle="tooltip" title="" class="b-blue" data-original-title="Blue"></span>
-												</li> 
+													<a href="<?=$links['twitter']?>" target="_blank"><span data-toggle="tooltip" title="" data-original-title="Twitter">
+													<i class="fab fa-twitter"></i></span></a>
+												</li>
+												<li>
+													<a href="<?=$links['linkedin']?>" target="_blank"><span data-toggle="tooltip" title="" data-original-title="Linkedin">
+													<i class="fab fa-linkedin-in"></i></span></a>
+												</li>
+												<li>
+													<a href="<?=$links['instagram']?>" target="_blank"><span data-toggle="tooltip" title="" data-original-title="Instagram">
+													<i class="fab fa-instagram"></i></span></a>
+												</li>
+												<li>
+													<a href="<?=$links['whatsapp']?>" target="_blank"><span data-toggle="tooltip" title="" data-original-title="Whatsapp">
+													<i class="fab fa-whatsapp"></i></span></a>
+												</li>
 											</ul>
 										</div>
 										</div>
@@ -307,11 +311,11 @@
 						</div>
 						<div class="col-xl-4 col-lg-4 col-mb-4 col-sm-12 col-xs-12">
 						<ul class="b-social-icons text-left text-md-right pt-2">
-							<li class="b-social_facebook"><a href="#" target="_blank" class=""><i class="fa fa-facebook"></i>Facebook</a></li>
-							<li class="b-social_twitter"><a href="#" target="_blank" class=""><i class="fa fa-twitter"></i>Twitter</a></li>
-							<li class="b-social_google"><a href="#" target="_blank" class=""><i class="fa fa-google-plus"></i>Google</a></li>
-							<li class="b-social_email"><a href="#" target="_blank" class=""><i class="fa fa-envelope"></i>Email</a></li>
-							<li class="b-social_pinterest"><a href="#" target="_blank" class=""><i class="fa fa-pinterest"></i>Pinterest</a></li>
+							<li class="b-social_facebook"><a href="#" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                            <li class="b-social_twitter"><a href="#" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
+                            <li class="b-social_google"><a href="#" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+                            <li class="b-social_email"><a href="#" target="_blank"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                            <li class="b-social_pinterest"><a href="#" target="_blank"><i class="fab fa-whatsapp"></i>Whatsapp</a></li>
 						</ul>
 						</div>
 					</div>

@@ -16,3 +16,7 @@
 .b-display-list-wrapper .b-display-item-list .b-display-item{
     text-align: -webkit-center;
 }
+
+.fab{
+    color: #b9b9b9 !important;
+}
