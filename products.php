@@ -327,6 +327,7 @@
                                 if(mysqli_num_rows($product)>0){
                                     while($row = mysqli_fetch_array($product)){
                                         $product_images = unserialize($row['images']);
+                                        $product_id = $row['product_id'];
                                         if(count($product_images)<=0){
                                             $image = $image_path.'noImage.jpg';
                                         }else{
@@ -337,7 +338,7 @@
                                         <div class="col-xl-4 col-lg-4 col-mb-4 col-sm-6 col-xs-12">
                                             <div class="b-product_grid_single">
                                                 <div class="b-product_grid_header custom-prod-page-image">
-                                                    <a href="#">
+                                                    <a href="product-view.php?product=<?=$product_id?>">
                                                         <img data-src="<?=$image?>" src="<?=$image?>" class="img-fluid img-switch d-block" alt="" style="">
                                                     </a> 
                                                     <!-- <div class="b-product_grid_action">
@@ -354,13 +355,13 @@
                                                 </div>
                                                 <div class="b-product_grid_info">
                                                     <h3 class="product-title">
-                                                        <a href="#"><?=$row['name']?></a>
+                                                        <a href="product-view.php?product=<?=$product_id?>"><?=$row['name']?></a>
                                                     </h3>
                                                     <div class="clearfix">
                                                         <div class="b-product_grid_toggle float-left">
                                                             <span class="b-price">Rs: <?=$row['price']?></span>
                                                             <span class="b-add_cart">
-                                                                <a href="#">Rs: <?=$row['price']?></a>
+                                                                <a href="product-view.php?product=<?=$product_id?>">Rs: <?=$row['price']?></a>
                                                             </span>
                                                         </div>
                                                         <div class="b-product_options float-right">
