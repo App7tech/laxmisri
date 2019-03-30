@@ -90,11 +90,11 @@
                     <div class="b-footer_block_in">
                         <p class="text-center mb-0" ><a><b>Laxmi Sri Art Jewellers</b></a></p>
                         <ul class="b-social-icons text-center">
-                            <li class="b-social_facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i>Facebook</a></li>
-                            <li class="b-social_twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i>Twitter</a></li>
-                            <li class="b-social_google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i>Google</a></li>
-                            <li class="b-social_email"><a href="#" target="_blank"><i class="fa fa-envelope"></i>Email</a></li>
-                            <li class="b-social_pinterest"><a href="#" target="_blank"><i class="fa fa-pinterest"></i>Pinterest</a></li>
+                            <li class="b-social_facebook"><a href="#" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                            <li class="b-social_twitter"><a href="#" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
+                            <li class="b-social_google"><a href="#" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+                            <li class="b-social_email"><a href="#" target="_blank"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                            <li class="b-social_pinterest"><a href="#" target="_blank"><i class="fab fa-whatsapp"></i>Whatsapp</a></li>
                         </ul>
                         <br>
                     </div>
