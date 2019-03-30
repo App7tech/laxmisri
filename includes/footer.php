@@ -25,11 +25,9 @@
                     <h5 class="b-footer_block_title">Information</h5>
                     <div class="b-footer_block_in">
                         <ul class="b-footer_menu">
-                            <li><a href="#">About Store</a></li>
+                            <li><a href="about.php">About Store</a></li>
                             <li><a href="#">New Collection</a></li>
-                            <!-- <li><a href="#">Woman Dress</a></li>-->
-                            <li><a href="contact-01.html">Contact Us</a></li>
-                            <!--<li><a href="#">Latest News</a></li>-->
+                            <li><a href="contact.php">Contact Us</a></li>
                             <li><a href="#">Our Sitemap</a></li>
                         </ul>
                     </div>
