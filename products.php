@@ -27,16 +27,21 @@
                     <div class="b-filters_inner_area p-0">
                         <div class="b-sidebar_widget">
                         <h5 class="b-filter_title">PRODUCT CATEGORIES</h5>
-                        <form action="#">
-                            <ul>  
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Bags</a></li>
-                            <li><a href="#">Jewellery</a></li>
-                            <li><a href="#">Man</a></li>
-                            <li><a href="#">Other</a></li>
-                            <li><a href="#">Shoes</a></li>
-                            <li><a href="#">Watches</a></li>
-                            <li><a href="#">Woman</a></li>
+                        <form action="#" style="max-height: 300px;overflow: auto;">
+                            <ul> 
+                            <?php 
+                                 include_once('admin/config.php');
+                                 $dbhandle = db_connect();
+                                 $sql = "SELECT * FROM `categories` WHERE status = 1";
+                                 $category = mysqli_query($dbhandle,$sql);
+                                 $iterate = 1;
+                                 $total = mysqli_num_rows($category);
+                                 if($total>0){
+                                    while($row = mysqli_fetch_array($category)){
+                                        echo'<li class="text-capitalize"><a href="products.php?category='.$row["category_id"].'">'.$row['category_name'].'</a></li>';
+                                    }
+                                }
+                            ?>
                             </ul> 
                         </form>
                         </div>
@@ -183,7 +188,6 @@
                             if(isset($_GET['category'])){
                                 $cat_id = $_GET['category']; 
                             }
-                            include_once('admin/config.php');
                             $dbhandle = db_connect();
                             $sql = "SELECT * FROM `categories` WHERE category_id = $cat_id";
                             $category = mysqli_query($dbhandle,$sql);
