@@ -19,7 +19,20 @@
 <script src="assets/js/plugins/revolution/revolution.extension.slideanims.min.js"></script>
 
 <!-- JQUERY:: OWL.JS -->
+<script src="assets/js/plugins/owl/owl.carousel.min.js"></script>
+<script src="assets/js/plugins/owl/owl.carousel2.thumbs.js"></script>
+
+<!-- JQUERY:: OWL.JS -->
 <script src="assets/js/plugins/owl/owl.carousel.min.js"></script> 
 
 <!-- JQUERY:: CUSTOM.JS -->
 <script src="assets/js/custom.js"></script> 
+
+<!-- JQUERY:: SLICK.JS -->
+<script src="assets/js/plugins/slick/slick.js"></script>
+
+<!-- JQUERY:: ZOOM IT.JS -->
+<script src="assets/js/plugins/zoomit/jquery.zoomit.min.js"></script>
+
+<!-- JQUERY:: MASONRY.JS -->
+<script src="assets/js/plugins/masonry/masonry.min.js"></script>
