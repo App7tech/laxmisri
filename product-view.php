@@ -82,21 +82,6 @@
                                 }
                             }
                         ?>
-                        <!-- <div class="b-produt-item">
-                          <img src="assets/images/products/product-single/product-single.jpg" alt="" class="img-fluid" data-zoomed="assets/images/products/product-single/product-single.jpg">
-                        </div>
-                        <div class="b-produt-item">
-                          <img src="assets/images/products/product-single/man-24.jpg" alt="" class="img-fluid" data-zoomed="assets/images/products/product-single/man-24.jpg">
-                        </div>
-                        <div class="b-produt-item">
-                          <img src="assets/images/products/product-single/man-23.jpg" alt="" class="img-fluid" data-zoomed="assets/images/products/product-single/man-23.jpg">
-                        </div>
-                        <div class="b-produt-item">
-                          <img src="assets/images/products/product-single/man-1.jpg" alt="" class="img-fluid" data-zoomed="assets/images/products/product-single/man-1.jpg">
-                        </div>
-                        <div class="b-produt-item">
-                          <img src="assets/images/products/product-single/man-9.jpg" alt="" class="img-fluid" data-zoomed="assets/images/products/product-single/man-9.jpg">
-                        </div> -->
                       </div>
 
                       <div class="b-show-product-gallery-wrap">
@@ -128,21 +113,6 @@
                                     }
                                 }
                             ?>
-                          <!-- <div class="owl-thumb-item b-display-item">
-                            <img src="assets/images/products/product-single/product-single.jpg" alt="" class="img-fluid">
-                          </div>
-                          <div class="owl-thumb-item b-display-item">
-                            <img src="assets/images/products/product-single/man-24.jpg" alt="" class="img-fluid">
-                          </div>
-                          <div class="owl-thumb-item b-display-item">
-                            <img src="assets/images/products/product-single/man-23.jpg" alt="" class="img-fluid">
-                          </div>
-                          <div class="owl-thumb-item b-display-item">
-                            <img src="assets/images/products/product-single/man-1.jpg" alt="" class="img-fluid">
-                          </div>
-                          <div class="owl-thumb-item b-display-item">
-                            <img src="assets/images/products/product-single/man-9.jpg" alt="" class="img-fluid">
-                          </div> -->
                         </div><!-- /b-display-item-list -->
 
                         <div class="b-slider-action">
