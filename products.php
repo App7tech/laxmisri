@@ -40,7 +40,7 @@
                             </ul> 
                         </form>
                         </div>
-                        <div class="b-sidebar_widget">
+                        <!-- <div class="b-sidebar_widget">
                         <h5 class="b-filter_title">FILTER BY COLOR</h5>
                         <form action="#">
                             <ul class="b-color_filter">
@@ -81,8 +81,8 @@
                             </li> 
                             </ul> 
                         </form>
-                        </div> 
-                        <div class="b-sidebar_widget">
+                        </div>  -->
+                        <!-- <div class="b-sidebar_widget">
                         <h5 class="b-filter_title">FILTER BY SIZE</h5>
                         <form action="#">
                             <ul class="b-list_ib">
@@ -169,7 +169,7 @@
                             <span>£125.00</span>
                             </li> 
                         </ul>
-                        </div> 
+                        </div>  -->
                     </div>
                     </div>
                 </div>  
@@ -198,7 +198,7 @@
                         <span class="text-capitalize"> <?=$category_name;?> </span>
                         </nav>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-6 col-xs-12 text-right">
+                    <!-- <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-6 col-xs-12 text-right">
                         <p class="b-result_count d-inline-block hidden-md-down">
                         <a href="shop-grid-leftbar.html" class="icon-grid icons b-active b-grid_button"></a>
                         <a href="shop-grid-list-switcher.html" class="icon-list icons b-list_button"></a>
@@ -206,9 +206,9 @@
                         <div class="b-filter_button d-inline-block">
                         <a href="javascript:;" class="b-open_filters">Filters</a>
                         </div>
-                    </div> 
+                    </div>  -->
                     </div>
-                    <div class="b-filters_area mt-2">
+                    <!-- <div class="b-filters_area mt-2">
                     <div class="b-filters_inner_area">
                         <div class="row clearfix">
                         <div class="col-xl-3 col-lg-3 col-mb-3 col-sm-6 col-xs-12">
@@ -312,7 +312,7 @@
                             </li>
                         </ul>
                     </div>      
-                    </div>  
+                    </div>   -->
                     <div class="b-products b-product_grid b-product_grid_four mb-4"> 
                         <div class="row clearfix">
                             <?php 
@@ -328,6 +328,7 @@
                                         }else{
                                             $image = $image_path.'products/'.$product_images[0];
                                         }
+                                        $links = unserialize($row['social_links']);
                             ?>
                                         <div class="col-xl-4 col-lg-4 col-mb-4 col-sm-6 col-xs-12">
                                             <div class="b-product_grid_single">
@@ -335,7 +336,7 @@
                                                     <a href="#">
                                                         <img data-src="<?=$image?>" src="<?=$image?>" class="img-fluid img-switch d-block" alt="" style="">
                                                     </a> 
-                                                    <div class="b-product_grid_action">
+                                                    <!-- <div class="b-product_grid_action">
                                                         <a href="javascript:void(0)" data-whishurl="whishlist.html" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to Whishlist">
                                                         <i class="icon-heart icons b-add_to_whish">
                                                             <img src="assets/images/products/product_loading.gif" class="g-loading_gif" alt="">
@@ -345,7 +346,7 @@
                                                         <a href="javascript:void(0);" data-toggle="modal" data-target="#b-qucik_view">
                                                             <i data-toggle="tooltip" data-placement="left" title="" class="icon-magnifier-add icons" data-original-title="Quick View"></i>
                                                         </a>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                                 <div class="b-product_grid_info">
                                                     <h3 class="product-title">
@@ -359,15 +360,29 @@
                                                             </span>
                                                         </div>
                                                         <div class="b-product_options float-right">
-                                                        <ul class="pl-0 mb-0 list-unstyled">
-                                                            <li>
-                                                                <span data-toggle="tooltip" title="" class="b-black" data-original-title="Black"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span data-toggle="tooltip" title="" class="b-blue" data-original-title="Blue"></span>
-                                                            </li> 
-                                                        </ul>
-                                                    </div>
+                                                            <ul class="pl-0 mb-0 list-unstyled">
+                                                                <li>
+                                                                    <a href="<?=$links['facebook']?>" target="_blank"><span data-toggle="tooltip" title="" data-original-title="Facebook">
+                                                                    <i class="fab fa-facebook-f"></i></span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="<?=$links['twitter']?>" target="_blank"><span data-toggle="tooltip" title="" data-original-title="Twitter">
+                                                                    <i class="fab fa-twitter"></i></span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="<?=$links['linkedin']?>" target="_blank"><span data-toggle="tooltip" title="" data-original-title="Linkedin">
+                                                                    <i class="fab fa-linkedin-in"></i></span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="<?=$links['instagram']?>" target="_blank"><span data-toggle="tooltip" title="" data-original-title="Instagram">
+                                                                    <i class="fab fa-instagram"></i></span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="<?=$links['whatsapp']?>" target="_blank"><span data-toggle="tooltip" title="" data-original-title="Whatsapp">
+                                                                    <i class="fab fa-whatsapp"></i></span></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
