@@ -12,10 +12,38 @@
               <div class="row clearfix">
                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="b-breadcrumbs">
-                      <a href="#">Home</a>
-                      <a href="#">Shop</a>
-                      <a href="#">Man</a>
-                      <span>Shirt</span>
+                        <a href="index.php">Home</a>
+                        <?php
+                            $product_id = 0; 
+                            if(isset($_GET['product'])){
+                                $product_id = $_GET['product']; 
+                            }
+                            $dbhandle = db_connect();
+                            $sql = "SELECT * FROM `products` WHERE product_id = $product_id AND status=1";
+                            $product = mysqli_query($dbhandle,$sql);
+                            $iterate = 1;
+                            if(mysqli_num_rows($product)>0){
+                                $row = mysqli_fetch_array($product);
+                                $name = $row['name'];
+                                $description = $row['description'];
+                                $price = $row['price'];
+                                $offer_price = $row['offer_price'];
+                                $category_id = $row['category_id'];
+                                $social_links = unserialize($row['social_links']);
+                                $images = unserialize($row['images']);
+                                $offer = $row['offer'];
+                                $category_sql = "SELECT * FROM `categories` WHERE category_id = $category_id ";
+                                $category = mysqli_query($dbhandle,$category_sql);
+                                if(mysqli_num_rows($category)>0){
+                                    $category_row = mysqli_fetch_array($category);
+                                    $category_name = $category_row['category_name'];
+                                }
+                            }else{
+                                echo '<script>alert("No Product Found!"); window.location="index.php";</script>';
+                            }
+                        ?>
+                        <a href="products.php?category=<?=$category_id?>" class="text-capitalize"><?=$category_name;?></a>
+                        <span class="text-capitalize"><?=$name;?></span>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
