@@ -3,3 +3,16 @@
     object-fit: contain !important;
     width: 100% !important;
 }
+
+.slick-slide img{
+    height: 100px !important;
+    /* display: unset !important; */
+}
+
+.b-produt-item{
+    text-align: center !important;
+}
+
+.b-display-list-wrapper .b-display-item-list .b-display-item{
+    text-align: -webkit-center;
+}
