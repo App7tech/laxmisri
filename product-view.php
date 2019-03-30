@@ -62,7 +62,27 @@
                   <div class="row clearfix b-product-display">
                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 b-display-single">
                       <div class="b-product-carousel owl-carousel" id="bSingleProductCarousel" data-slider-id="bSingleProductCarousel">
-                        <div class="b-produt-item">
+                        <?php
+                            $image_path = 'assets/images/';
+                            if(count($images)<=0){
+                                $image = $image_path.'noImage.jpg';
+                                echo'
+                                <div class="b-produt-item">
+                                    <img src="'.$image.'" alt="" class="img-fluid" data-zoomed="'.$image.'">
+                                </div>
+                                ';
+                            }else{
+                                foreach($images as $image){
+                                    $image1 = $image_path.'products/'.$image;
+                                    echo'
+                                    <div class="b-produt-item">
+                                        <img src="'.$image1.'" alt="" class="img-fluid" data-zoomed="'.$image1.'">
+                                    </div>
+                                    ';
+                                }
+                            }
+                        ?>
+                        <!-- <div class="b-produt-item">
                           <img src="assets/images/products/product-single/product-single.jpg" alt="" class="img-fluid" data-zoomed="assets/images/products/product-single/product-single.jpg">
                         </div>
                         <div class="b-produt-item">
@@ -76,7 +96,7 @@
                         </div>
                         <div class="b-produt-item">
                           <img src="assets/images/products/product-single/man-9.jpg" alt="" class="img-fluid" data-zoomed="assets/images/products/product-single/man-9.jpg">
-                        </div>
+                        </div> -->
                       </div>
 
                       <div class="b-show-product-gallery-wrap">
@@ -88,7 +108,27 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                       <div class="b-display-list-wrapper">
                         <div class="owl-thumbs b-display-item-list" id="bSingleProduct" data-slider-id="bSingleProductCarousel">
-                          <div class="owl-thumb-item b-display-item">
+                            <?php
+                                $image_path = 'assets/images/';
+                                if(count($images)<=0){
+                                    $image = $image_path.'noImage.jpg';
+                                    echo'
+                                    <div class="owl-thumb-item b-display-item">
+                                        <img src="'.$image.'" alt="" class="img-fluid">
+                                    </div>
+                                    ';
+                                }else{
+                                    foreach($images as $image){
+                                        $image1 = $image_path.'products/'.$image;
+                                        echo'
+                                        <div class="owl-thumb-item b-display-item">
+                                            <img src="'.$image1.'" alt="" class="img-fluid">
+                                        </div>
+                                        ';
+                                    }
+                                }
+                            ?>
+                          <!-- <div class="owl-thumb-item b-display-item">
                             <img src="assets/images/products/product-single/product-single.jpg" alt="" class="img-fluid">
                           </div>
                           <div class="owl-thumb-item b-display-item">
@@ -102,7 +142,7 @@
                           </div>
                           <div class="owl-thumb-item b-display-item">
                             <img src="assets/images/products/product-single/man-9.jpg" alt="" class="img-fluid">
-                          </div>
+                          </div> -->
                         </div><!-- /b-display-item-list -->
 
                         <div class="b-slider-action">
@@ -155,7 +195,7 @@
             </div>
           </div>
  
-          <section id="b-products">
+          <!-- <section id="b-products">
               <div class="b-section_title">
                  <h4 class="text-center text-uppercase">
                   RELATED PRODUCTS
@@ -434,7 +474,7 @@
                       </div>
                   </div>
               </div>
-          </section>
+          </section> -->
 
             <!-- footer start -->
             <?php include_once('includes/footer.php'); ?>
