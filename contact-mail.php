@@ -2,6 +2,10 @@
     $to = 'laxmisriart2@gmail.com';
     $subject = 'Contact Request';
     $from = 'contact@laxmisri.com';
+    $userName = $_POST['userName'];
+    $userEmail = $_POST['userEmail'];
+    $subject = $_POST['subject'];
+    $content = $_POST['content'];
     
     // To send HTML mail, the Content-type header must be set
     $headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -14,8 +18,12 @@
     
     // Compose a simple HTML email message
     $message = '<html><body>';
-    $message .= '<h1 style="color:#f40;">Hi Jane!</h1>';
-    $message .= '<p style="color:#080;font-size:18px;">Will you marry me?</p>';
+    $message .= '<h1 style="color:#f40;">Hello Admin!</h1>';
+    $message .= '<p style="color:#080;font-size:18px;">New contact request from laxmisri.com</p>';
+    $message .= '<p style="color:#080;font-size:18px;">Name: '.$userName.'</p>';
+    $message .= '<p style="color:#080;font-size:18px;">Email: '.$userEmail.'</p>';
+    $message .= '<p style="color:#080;font-size:18px;">Subject: '.$subject.'</p>';
+    $message .= '<p style="color:#080;font-size:18px;">Content: '.$content.'</p>';
     $message .= '</body></html>';
     
     // Sending email
