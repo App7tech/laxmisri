@@ -115,55 +115,36 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <div class="b-product_single_summary">
-                    <h1>Jhecked flannel shirt</h1>
+                    <h1 class="text-capitalize"><?=$name?></h1>
                     <p class="b-price">
-                      <span class="b-amount">
-                      <span class="b-symbol">£</span>79.00</span>
+                        <span class="b-amount">
+                        <?php
+                            $offer_text = '';
+                            if($offer == 1) {
+                                echo '<span class="b-symbol"><i>Rs: </span>'.$offer_price.'<small> <s>'.$price.'</s></i></small> ';
+                                $offer_text = '<span class="badge badge-primary">Offer Product</span>';
+                            } else{
+                                echo '<span class="b-symbol"><i>Rs: </span>'.$price.'</i>';
+                            }
+                        ?>
+                        </span>
                     </p>
-                    <div class="b-produt_description">
-                      <p>Adipiscing vehicula amet in natoque lobortis mus velit dis vestibulum ullamcorper senectus conubia suspendisse vestibulum nam condimentum aliquet ipsum justo eu vestibulum sagittis.A vel vehicula a mi varius porta.</p>
+                    <p><?=$offer_text?></p>
+                    <div class="b-product_description">
+                      <p><?=$description?></p>
                     </div>
-                    <div class="b-product_attr">
-                      <div class="b-product_attr_single">
-                        <ul class="pl-0 list-unstyled clearfix">
-                          <li><span class="b-product_attr_title pt-1">Color:</span></li>
-                          <li><a href="#"><span data-toggle="tooltip" title="" data-original-title="Black" class="b-color_attr b-black"></span></a></li>
-                          <li><a href="#"><span data-toggle="tooltip" title="" data-original-title="Red" class="b-color_attr b-red"></span></a></li>
-                          <li><a href="#"><span data-toggle="tooltip" title="" data-original-title="Yellow" class="b-color_attr b-yellow"></span></a></li>
-                        </ul>
-                      </div>
-                      <div class="b-product_attr_single">
-                        <ul class="pl-0 list-unstyled clearfix">
-                          <li><span class="b-product_attr_title">Size:</span></li>
-                          <li><a href="#"><span class="b-size_attr">L</span></a></li>
-                          <li><a href="#"><span class="b-size_attr">XL</span></a></li>
-                          <li><a href="#"><span class="b-size_attr">XXL</span></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="b-product_single_action clearfix">
-                      <div class="b-quantity pull-left">
-                        <input type="button" value="-" class="b-minus">
-                        <input type="text" step="1" min="1" max="" name="b-quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
-                        <input type="button" value="+" class="b-plus">
-                      </div>
-                      <button class="text-uppercase pull-left btn">add to cart</button>
-                    </div>
+                    
                     <div class="b-product_single_option">
-                      <ul class="pl-0 list-unstyled">
-                        <li><a href="#"><i class="icon-heart icons"></i> Add to wishlist</a></li>
-                        <li><a href="#"><i class="icon-refresh icons"></i> Compare</a></li>
-                        <li><b class="text-uppercase">Sku</b>: N/A</li>
-                        <li><b>Category</b>: <a href="#">Man</a></li>
+                      <ul class="pl-0 list-unstyled text-capitalize">
+                        <li><b>Category</b>: <a href="#"><?=$category_name?></a></li>
                         <li>
                           <b>Share</b>:
                           <span class="b-share_product">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-envelope"></a>
-                            <a href="#" class="fa fa-google-plus"></a>
-                            <a href="#" class="fa fa-pint"></a>
+                            <a href="<?=$social_links['facebook']?>" target="_blank" class="fab fa-facebook-f"></a>
+                            <a href="<?=$social_links['twitter']?>" target="_blank" class="fab fa-twitter"></a>
+                            <a href="<?=$social_links['instagram']?>" target="_blank" class="fab fa-instagram"></a>
+                            <a href="<?=$social_links['linkedin']?>" target="_blank" class="fab fa-linkedin"></a>
+                            <a href="<?=$social_links['whatsapp']?>" target="_blank" class="fab fa-whatsapp"></a>
                           </span>
                         </li>
                       </ul>
