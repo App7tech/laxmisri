@@ -463,16 +463,15 @@
 				<div class="b-newslatter b-newslatter_bg_grey">
 				<div class="b-newsletter_inner"> 
 						<h3 class="text-center b-font_default text-uppercase">Our Newsletter</h3>
-						<p class="text-center pt-2 pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br>et dolore magna aliqua. Ut enim ad minim veniam</p>
-						<div class="b-newsletter_form">
-							<form action="#" class="clearfix">
-								<div class="form-group float-left">  
-									<input name="email" placeholder="Your email address" required="" type="email"> 
-								</div>  
-								<div class="b-form_submit float-left">    
-									<button class="b-submit">Sign up</button>
-								</div>    
-							</form>
+						<p class="text-center pt-2 pb-3">Sign up now and get latest updates from us,<br> about new and upcoming products with exciting offers.</p>
+						<p id="signup-status" class="text-center text-danger font-weight-bold"></p>
+						<div class="b-newsletter_form clearfix">
+							<div class="form-group float-left">  
+								<input name="email" id="email" placeholder="Your email address" type="email"> 
+							</div>  
+							<div class="b-form_submit float-left">    
+								<button class="b-submit" onclick="sendSignUp()">Sign up</button>
+							</div>    
 						</div>
 					</div>
 				</div>
@@ -560,7 +559,29 @@
 				</div>
 			</div>
 		</div> 
-      
+		
+		<script>
+			function sendSignUp() {
+              var valid = true;
+			  if($('#email').val()==''){
+				valid = false;
+				$("#signup-status").html('* Error : Email Required *');
+			  }
+              if(valid) {
+                jQuery.ajax({
+					url: "subscribe-mail.php",
+					data:'email='+$("#userName").val(),
+					type: "POST",
+					success:function(data){
+						$("#signup-status").html(data);
+						$("#email").val('');
+					},
+					error:function (){}
+                });
+              }
+            }
+		</script>
+
 		<?php include_once('includes/foot.php'); ?>
 
   	</body>
