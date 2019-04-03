@@ -15,11 +15,11 @@
 						<!--	<img src="assets/images/about-sign.jpg" class="img-fluid d-block m-auto" alt="">-->
 							<div class="b-blog_social">
 								<ul class="list-unstyled clearfix mb-0">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i></a></li>
-								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
 								</ul>
 							</div>
 						</div>
