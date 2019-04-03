@@ -8,7 +8,7 @@
 		<?php include_once('includes/header.php'); ?>
            
         <div class="b-product_single_breadcrumbs pt-3 pb-3">
-            <div class="container">
+            <div class="container" style="width:85% !important">
               <div class="row clearfix">
                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="b-breadcrumbs">
@@ -47,10 +47,6 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                  <ul class="list-unstyled pl-0 float-right mb-0">
-                    <li class="d-inline-block mr-2"><i class="fa fa-long-arrow-left"></i></li>
-                    <lii class="d-inline-block"><i class="fa fa-long-arrow-right"></i></li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -175,7 +171,8 @@
               <div class="b-products b-product_grid b-product_grid_four mb-4">
                   <div class="container">
                       <div class="clearfix owl-carousel owl-theme" id="b-related_products">
-					  	<?php 
+              <?php 
+              $msg = '';
 							$sql = "SELECT * FROM `products` WHERE category_id='$category_id' AND product_id!='$product_id' limit 8";
 							$product = mysqli_query($dbhandle,$sql);
 							$iterate = 1;
@@ -238,11 +235,15 @@
 						  </div>
 						<?php
 								} //while close
-							} //if close
+              } //if close
+              else{
+                $msg = "<p class='text-center'>No Related Products</p>";
+              }
 						?>
                       </div>
                   </div>
               </div>
+              <?php echo $msg; ?>
           </section>
 
             <!-- footer start -->
