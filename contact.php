@@ -115,13 +115,13 @@
                         </div>-->
                       </div>
                     </div>
-                    <div class="b-blog_social b-socail_color mt-0 pb-5">
+                    <div class="b-blog_social mt-0 pb-5">
                       <ul class="list-unstyled clearfix mb-0 pl-0 pr-0">
-                        <li><a href="#" class="fa fa-facebook text-white"></a></li>
-                        <li><a href="#" class="fa fa-twitter text-white"></a></li>
-                        <li><a href="#" class="fa fa-google-plus text-white"></a></li>
-                        <li><a href="#" class="fa fa-envelope text-white"></a></li>
-                        <li><a href="#" class="fa fa-pinterest text-white"></a></li>
+                        <li><a href="#" class="fab fa-facebook-f text-white"></a></li>
+                        <li><a href="#" class="fab fa-twitter text-white"></a></li>
+                        <li><a href="#" class="fab fa-instagram text-white"></a></li>
+                        <li><a href="#" class="fab fa-linkedin text-white"></a></li>
+                        <li><a href="#" class="fab fa-whatsapp text-white"></a></li>
                       </ul>
                     </div>
                   </div>
