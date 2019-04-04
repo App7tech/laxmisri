@@ -7,12 +7,9 @@
 <header class="topbar">
     <nav class="navbar top-navbar navbar-toggleable-sm navbar-light">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index-2.html">
-                <b>
-                    <img src="assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
-                </b>
+            <a class="navbar-brand" href="dashboard.php">
                 <span>  
-                    <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                    <img src="assets/images/admin-logo.png" style="width:200px" class="light-logo" alt="homepage" />
                 </span> 
             </a>
         </div>
