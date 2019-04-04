@@ -414,40 +414,40 @@
 						<div class="col-xl-3 col-lg-3 col-mb-3 col-sm-6 col-xs-12">
 						<div class="b-featured_cat_in">
 							<a href="#">
-							<img src="assets/images/category/home-furniture/category-04.jpg" class="img-fluid d-block" alt="">
+							<img src="assets/images/category/home-furniture/bangles.png" class="img-fluid d-block" alt="">
 							</a>
 							<div class="b-cat_mask">
-							<a href="#" class="category-link-overlay">Furniture</a> 
+							<a href="#" class="category-link-overlay">Bangles</a> 
 							</div>
 						</div>
 						</div>
 						<div class="col-xl-3 col-lg-3 col-mb-3 col-sm-6 col-xs-12">
 						<div class="b-featured_cat_in">
 							<a href="#">
-							<img src="assets/images/category/home-furniture/category-02.jpg" class="img-fluid d-block" alt="">
+							<img src="assets/images/category/home-furniture/earrings.png" class="img-fluid d-block" alt="">
 							</a>
 							<div class="b-cat_mask">
-							<a href="#" class="category-link-overlay">Accessories</a> 
+							<a href="#" class="category-link-overlay">Earrings</a> 
 							</div>
 						</div> 
 						</div> 
 						<div class="col-xl-3 col-lg-3 col-mb-3 col-sm-6 col-xs-12">
 						<div class="b-featured_cat_in">
 							<a href="#">
-							<img src="assets/images/category/home-furniture/category-03.jpg" class="img-fluid d-block" alt="">
+							<img src="assets/images/category/home-furniture/pendents.png" class="img-fluid d-block" alt="">
 							</a>
 							<div class="b-cat_mask">
-							<a href="#" class="category-link-overlay">Jewellery</a> 
+							<a href="#" class="category-link-overlay">Pendent Sets</a> 
 							</div>
 						</div>
 						</div>  
 						<div class="col-xl-3 col-lg-3 col-mb-3 col-sm-6 col-xs-12">
 						<div class="b-featured_cat_in">
 							<a href="#">
-							<img src="assets/images/category/home-furniture/category-04.jpg" class="img-fluid d-block" alt="">
+							<img src="assets/images/category/home-furniture/sindoor.png" class="img-fluid d-block" alt="">
 							</a>
 							<div class="b-cat_mask">
-							<a href="#" class="category-link-overlay">Watches</a> 
+							<a href="#" class="category-link-overlay">Sindoor Dabhi</a> 
 							</div>
 						</div>
 						</div> 
