@@ -10,8 +10,8 @@
                 <div class="row clearfix b-shop_head"> 
                 <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-6 col-xs-12"> 
                     <nav class="b-shop_breadcrumb">
-                    <a href="#">Home</a>
-                    <span> Shop</span>
+                    <a href="index.php">Home</a>
+                    <span> Offers</span>
                     </nav>
                 </div>
                 </div>
