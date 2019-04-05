@@ -96,7 +96,7 @@
 							data-paddingright="[0,0,0,0]" 
 							data-paddingbottom="[0,0,0,0]" 
 							data-paddingleft="[0,0,0,0]" >
-							<a href="#" class="btn btn-full">See Offer</a>
+							<a href="offers.php" class="btn btn-full">See Offer</a>
 						</div>   
 					</li>
 					<?php
@@ -112,26 +112,35 @@
 			<!-- showcase-1 start -->
 			<section id="b-featured-cat-2">
 				<div class="container">
+				    	<div class="b-section_title text-center">
+					<!--<span>MADE THE HARD WAY</span>-->
+					<h4 class="text-uppercase">
+				     OUR BEST CATEGORIES
+					<span class="b-title_separator"><span></span></span>
+					</h4> 
+				</div>
 				<div class="row clearfix b-featured_cat-2 mb-4 mt-5">
 					<div class="col-xl-3 col-lg-3 col-mb-3 col-sm-12 col-xs-12">
 					<div class="b-featured_cat_in mb-4">
 						<div class="b-img_zoom">
 						<img class="d-block m-auto img-fluid" src="assets/images/banner/home-furniture/sets.png" alt="">
 						</div>
+						
 						<div class="b-cat_overlay b-cat_overlay_bg"> 
 						<div class="align-middle text-center">
 							<span class="hover-zoom"></span>
-							<h3>Necklaces sets</h3>        
+						
+							<h3>Necklaces sets</h3>      
 							<span>Look at entire collection</span>
 						</div> 
-						<a href="#">&nbsp;</a>
+						<a href="http://laxmisri.com/products.php?category=2">&nbsp;</a>
 						</div>
 					</div>
 					</div>  
 					<div class="col-xl-6 col-lg-6 col-mb-6 col-sm-12 col-xs-12">
 					<div class="b-featured_cat_in mb-4">
 						<div class="b-img_zoom">
-						<img class="d-block m-auto img-fluid" src="assets/images/banner/home-furniture/bangles.png" alt="">
+						<img class="d-block m-auto img-fluid" src="assets/images/banner/home-furniture/bangles2.png" alt="">
 						</div>
 						<div class="b-cat_overlay b-cat_overlay_bg"> 
 						<div class="align-middle text-center float-left ml-3">
@@ -139,7 +148,7 @@
 							<h3>Bangles</h3>        
 							<span>Look at entire collection</span>
 						</div> 
-						<a href="#">&nbsp;</a>
+						<a href="http://laxmisri.com/products.php?category=11">&nbsp;</a>
 						</div>
 					</div>
 					</div>  
@@ -154,7 +163,7 @@
 							<h3>Earrings</h3>        
 							<span>Look at entire collection</span>
 						</div> 
-						<a href="#">&nbsp;</a>
+						<a href="http://laxmisri.com/products.php?category=7">&nbsp;</a>
 						</div>
 					</div>
 					</div>  
@@ -166,8 +175,10 @@
 			<!-- showcase-2 start -->
 			<section id="b-featured-cat-2">
 				<div class="container">
+				    
 				<div class="row clearfix b-featured_cat-2 mb-4 mt-5">
 				<div class="col-xl-6 col-lg-6 col-mb-6 col-sm-12 col-xs-12">
+				    
 					<div class="b-featured_cat_in mb-4">
 						<div class="b-img_zoom">
 						<img class="d-block m-auto img-fluid" src="assets/images/banner/home-furniture/blackbeads.png" alt="">
@@ -178,7 +189,7 @@
 							<h3>Black Beads</h3>        
 							<span>Look at entire collection</span>
 						</div> 
-						<a href="#">&nbsp;</a>
+						<a href="http://laxmisri.com/products.php?category=18">&nbsp;</a>
 						</div>
 					</div>
 					</div> 
@@ -194,7 +205,7 @@
 							<h3>Idols</h3>        
 							<span>Look at entire collection</span>
 						</div> 
-						<a href="#">&nbsp;</a>
+						<a href="http://laxmisri.com/products.php?category=8">&nbsp;</a>
 						</div>
 					</div>
 					</div>  
@@ -210,7 +221,7 @@
 							<h3>Chandballi</h3>        
 							<span>Look at entire collection</span>
 						</div> 
-						<a href="#">&nbsp;</a>
+						<a href="http://laxmisri.com/products.php?category=37">&nbsp;</a>
 						</div>
 					</div>
 					</div>  
@@ -402,9 +413,9 @@
 			<section id="b-products_cat"> 
 				<div class="b-cat_bg_img">
 				<div class="b-section_title text-center">
-					<span>MADE THE HARD WAY</span>
+					<!--<span>MADE THE HARD WAY</span>-->
 					<h4 class="text-uppercase">
-					FEATURED CATEGORIES
+					RECOMMENDED CATEGORIES
 					<span class="b-title_separator"><span></span></span>
 					</h4> 
 				</div>
@@ -413,41 +424,41 @@
 					<div class="row">
 						<div class="col-xl-3 col-lg-3 col-mb-3 col-sm-6 col-xs-12">
 						<div class="b-featured_cat_in">
-							<a href="#">
-							<img src="assets/images/category/home-furniture/bangles.png" class="img-fluid d-block" alt="">
+							<a href="http://laxmisri.com/products.php?category=21">
+							<img src="assets/images/category/home-furniture/kada1.png" class="img-fluid d-block" alt="">
 							</a>
 							<div class="b-cat_mask">
-							<a href="#" class="category-link-overlay">Bangles</a> 
+							<a href="http://laxmisri.com/products.php?category=21" class="category-link-overlay">Kada</a> 
 							</div>
 						</div>
 						</div>
 						<div class="col-xl-3 col-lg-3 col-mb-3 col-sm-6 col-xs-12">
 						<div class="b-featured_cat_in">
-							<a href="#">
+							<a href="http://laxmisri.com/products.php?category=7">
 							<img src="assets/images/category/home-furniture/earrings.png" class="img-fluid d-block" alt="">
 							</a>
 							<div class="b-cat_mask">
-							<a href="#" class="category-link-overlay">Earrings</a> 
+							<a href="http://laxmisri.com/products.php?category=7" class="category-link-overlay">Earrings</a> 
 							</div>
 						</div> 
 						</div> 
 						<div class="col-xl-3 col-lg-3 col-mb-3 col-sm-6 col-xs-12">
 						<div class="b-featured_cat_in">
-							<a href="#">
+							<a href="http://laxmisri.com/products.php?category=16">
 							<img src="assets/images/category/home-furniture/pendents.png" class="img-fluid d-block" alt="">
 							</a>
 							<div class="b-cat_mask">
-							<a href="#" class="category-link-overlay">Pendent Sets</a> 
+							<a href="http://laxmisri.com/products.php?category=16" class="category-link-overlay">Pendent Sets</a> 
 							</div>
 						</div>
 						</div>  
 						<div class="col-xl-3 col-lg-3 col-mb-3 col-sm-6 col-xs-12">
 						<div class="b-featured_cat_in">
-							<a href="#">
+							<a href="http://laxmisri.com/products.php?category=34">
 							<img src="assets/images/category/home-furniture/sindoor.png" class="img-fluid d-block" alt="">
 							</a>
 							<div class="b-cat_mask">
-							<a href="#" class="category-link-overlay">Sindoor Dabhi</a> 
+							<a href="http://laxmisri.com/products.php?category=34" class="category-link-overlay">Sindoor Dabhi</a> 
 							</div>
 						</div>
 						</div> 
