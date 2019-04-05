@@ -85,89 +85,30 @@
                                             </div>
                                         </div>
                                     </div>
-                        <?php
+                        <?php   
+                                    if($iterate == 4){
+                                        echo'</div>
+                                        </div>';
+
+                                        echo'<section id="b-newsletter">
+                                                <div class="b-newsletter b-newsletter_bg mb-5">
+                                                    <div class="b-newsletter_inner">
+                                                        <h3 class="text-center font-italic">Connect to Basel & Co.</h3>
+                                                        <h2 class="text-center">Join Our Newsletter</h2>
+                                                        <p class="text-center">Hey you, sign up it only takes a second to be the first to find out about our latest news and promotions…</p>
+                                                    </div>
+                                                </div>
+                                            </section>';
+
+                                        echo '<div class="container">
+                                        <div class="row clearfix">';
+                                    }
                                     $iterate++;
                                 }
                             }else{
                                 echo '<h3>No Offers Found!</h3>';
                             }
                         ?>
-                    </div>
-                </div>
-			  
-			    <section id="b-newsletter">
-                    <div class="b-newsletter b-newsletter_bg mb-5">
-                        <div class="b-newsletter_inner">
-                            <h3 class="text-center font-italic">Connect to Basel & Co.</h3>
-                            <h2 class="text-center">Join Our Newsletter</h2>
-                            <p class="text-center">Hey you, sign up it only takes a second to be the first to find out about our latest news and promotions…</p>
-                            <div class="b-newsletter_form">
-                                <form action="#" class="clearfix">
-                                    <div class="form-group float-left"> 
-                                        <label>Email address: </label>
-                                        <input name="email" placeholder="Your email address" required="" type="email"> 
-                                    </div>  
-                                    <div class="b-form_submit float-left">    
-                                        <button class="b-submit">Sign up</button>
-                                    </div>    
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <div class="container">
-                    <div class="row clearfix">
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="b-product_grid_single">
-                            <div class="b-product_grid_header">
-                                <a href="#">
-                                    <img data-src="assets/images/products/home/product_grid_02_01.jpg, assets/images/products/home/product_grid_02_02.jpg" src="assets/images/products/home/product_grid_02_01.jpg" class="img-fluid img-switch d-block" alt="" style="">
-                                </a> 
-                                <div class="b-product_grid_action">
-                                    <a href="javascript:void(0)" data-whishurl="whishlist.html" data-toggle="tooltip" data-placement="left" title="" data-original-title="Add to Whishlist">
-                                    <i class="icon-heart icons b-add_to_whish">
-                                        <img src="assets/images/products/product_loading.gif" class="g-loading_gif" alt="">
-                                    </i>
-                                    </a>
-                                    <i data-toggle="tooltip" data-placement="left" title="" class="icon-refresh icons" data-original-title="Compare"></i>
-                                    <a href="javascript:void(0);" data-toggle="modal" data-target="#b-qucik_view">
-                                            <i data-toggle="tooltip" data-placement="left" title="" class="icon-magnifier-add icons" data-original-title="Quick View"></i>
-                                        </a>
-                                </div>
-                                <div class="b-product_labels b-labels_rounded b-new">
-                                    <span class="b-product_label">New</span>
-                                </div>
-                            </div>
-                            <div class="b-product_grid_info">
-                                    <h3 class="product-title">
-                                        <a href="#">Basic contrast sneakers</a>
-                                    </h3>
-                                    <div class="clearfix">
-                                    <div class="b-product_grid_toggle float-left">
-                                        <span class="b-price">$20</span>
-                                        <span class="b-add_cart">
-                                            <i class="icon-basket icons"></i>
-                                            <a href="#">Select Options</a>
-                                        </span>
-                                    </div>
-                                    <div class="b-product_options float-right">
-                                        <ul class="pl-0 mb-0 list-unstyled">
-                                            <li>
-                                            <span data-toggle="tooltip" title="" class="b-black" data-original-title="Black"></span>
-                                            </li>
-                                            <li>
-                                            <span data-toggle="tooltip" title="" class="b-brown" data-original-title="Brown"></span>
-                                            </li>
-                                            <li>
-                                            <span data-toggle="tooltip" title="" class="b-red" data-original-title="Red"></span>
-                                            </li> 
-                                        </ul>
-                                    </div>
-                                    </div>
-                            </div>
-                            </div>   
-                        </div>
                     </div>
                 </div>
 
