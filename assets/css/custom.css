@@ -20,3 +20,7 @@
 .fab{
     color: #b9b9b9 !important;
 }
+
+.b-about_text p{
+    text-align: justify !important;
+}

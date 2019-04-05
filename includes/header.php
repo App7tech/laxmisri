@@ -49,7 +49,7 @@
                                         </li>
                                         <!-- Top level items -->
                                         <li class=" b-has_sub b-dropdown_wrapper from-bottom p-static">
-                                            <a href="shop-grid-three.html" class="p-relative description ">
+                                            <a class="p-relative description ">
                                             <span class="top">Shop</span><i class="menu-tag sale">SALE</i><i class="fa fa-angle-down"></i></a>
                                             <!-- Sub Menu items -->
                                             <div class="b-dropdown_content sub-holder dropdown-left" style="width: 1000px;">
