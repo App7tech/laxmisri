@@ -127,10 +127,10 @@
                         <?php
                             $offer_text = '';
                             if($offer == 1) {
-                                echo '<span class="b-symbol"><i>Rs: </span>'.$offer_price.'<small> <s>'.$price.'</s></i></small> ';
+                                echo '<span class="b-symbol"><i>D.NO: </span>'.$offer_price.'<small> <s>'.$price.'</s></i></small> ';
                                 $offer_text = '<span class="badge badge-primary">Offer Product</span>';
                             } else{
-                                echo '<span class="b-symbol"><i>Rs: </span>'.$price.'</i>';
+                                echo '<span class="b-symbol"><i>D.NO: </span>'.$price.'</i>';
                             }
                         ?>
                         </span>
@@ -200,9 +200,9 @@
                                     </h3>
                                     <div class="clearfix">
                                       <div class="b-product_grid_toggle float-left">
-										<span class="b-price">Rs: <?=$row['price']?></span>
+										<span class="b-price">D.NO: <?=$row['price']?></span>
 										<span class="b-add_cart">
-											<a href="product-view.php?product=<?=$row['product_id']?>">Rs: <?=$row['price']?></a>
+											<a href="product-view.php?product=<?=$row['product_id']?>">D.NO: <?=$row['price']?></a>
 										</span>
                                       </div>
                                       <div class="b-product_options float-right">

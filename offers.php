@@ -52,9 +52,9 @@
                                                 </h3>
                                                 <div class="clearfix">
                                                     <div class="b-product_grid_toggle float-left">
-                                                        <span class="b-price" style="color:#000;">Rs: <s><?=$row['offer_price']?></s> <b><?=$row['price']?></b></span>
+                                                        <span class="b-price" style="color:#000;">D.NO: <s><?=$row['offer_price']?></s> <b><?=$row['price']?></b></span>
                                                         <span class="b-add_cart">
-                                                            <a href="product-view.php?product=<?=$product_id?>">Rs: <s><?=$row['offer_price']?></s> <b><?=$row['price']?></b></a>
+                                                            <a href="product-view.php?product=<?=$product_id?>">D.NO: <s><?=$row['offer_price']?></s> <b><?=$row['price']?></b></a>
                                                         </span>
                                                     </div>
                                                     <div class="b-product_options float-right">

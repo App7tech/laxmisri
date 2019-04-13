@@ -269,9 +269,9 @@
 										</h3>
 										<div class="clearfix">
 										<div class="b-product_grid_toggle float-left">
-											<span class="b-price">Rs: <?=$row['price']?></span>
+											<span class="b-price">D.NO: <?=$row['price']?></span>
 											<span class="b-add_cart">
-												<a href="product-view.php?product=<?=$row['product_id']?>">Rs: <?=$row['price']?></a>
+												<a href="product-view.php?product=<?=$row['product_id']?>">D.NO: <?=$row['price']?></a>
 											</span>
 										</div>
 										<div class="b-product_options float-right">
@@ -351,7 +351,7 @@
 							<div class="b-feature_prod_text text-right pt-5">
 								<span class="b-subline">DESIGNERS:Laxmi sri Art Jewellers</span>
 								<h2 class="b-product_name">ANTIQUE LONG SETS</h2>
-								<span class="b-price">Rs 2500</span>
+								<span class="b-price">D.NO 2500</span>
 								<p>Vel himenaeos quam fringilla a interdum blandit adipiscing ullamcorper per consequat in ut a enim suspendisse luctus commodo varius dictumst egestas at curae ultricies nam.</p>
 								<a href="#" class="btn">Read More</a>
 							</div>
@@ -373,7 +373,7 @@
 							<div class="b-feature_prod_text text-center pt-5">
 								<span class="b-subline">DESIGNERS: VALENTINO RACHELLI</span>
 								<h2 class="b-product_name">Long Sets</h2>
-								<span class="b-price">Rs 2500</span>
+								<span class="b-price">D.NO 2500</span>
 								<p>Vel himenaeos quam fringilla a interdum blandit adipiscing ullamcorper per consequat in ut a enim suspendisse luctus commodo varius dictumst egestas at curae ultricies nam.</p>
 								<a href="#" class="btn">Read More</a>
 							</div>
