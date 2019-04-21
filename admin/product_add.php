@@ -52,21 +52,19 @@
 			if(in_array($ext,$extension)) {
 
 				list($txt, $ext1) = explode(".", $_FILES['product_img']['name'][$key]);
-				$newName = rand(0, 9999).'.'.$ext1;
+				$newName = rand(0, 9999).'_'.time().'.'.$ext1;
 				$up = copy($_FILES['product_img']['tmp_name'][$key], $newName);
 				if($up == true){
 					// Add text watermark over image
 					$watermark = "Laxmi Sri Art Jewellers"; // Add your own water mark here
 					textwatermark($newName, $watermark, $newName ,$ext);
-					echo '<img src="'.$newName.'" class="preview" width="500">';
-				}else{
-					echo 'Error uploading image';
+					// echo '<img src="'.$newName.'" class="preview" width="500">';
 				}
 				
-				$filename=basename($file_name,$ext);
-				$newFileName=$filename."_".time().".".$ext;
-				move_uploaded_file($file_tmp=$_FILES["product_img"]["tmp_name"][$key],"../assets/images/products/".$newFileName);
-				array_push($images,"$newFileName");
+				// $filename=basename($file_name,$ext);
+				// $newFileName=$filename."_".time().".".$ext;
+				// move_uploaded_file($file_tmp=$_FILES["product_img"]["tmp_name"][$key],"../assets/images/products/".$newFileName);
+				array_push($images,"$newName");
 			}
 			else {
 				array_push($error,"$file_name, ");
@@ -82,9 +80,9 @@
 		$sql = "INSERT INTO `products`(`name`, `description`, `price`, `offer_price`, `category_id`, `social_links`, `images`, `featured`, `offer`, `status`, `date_time`) VALUES ('$product_text','$description','$price','$offer_price','$category','$social_links','$images','$featured','$offer','1','$date_time')";
 		$product = mysqli_query($dbhandle,$sql);
 		if($product){
-			// echo "<script>alert('product Added Successfully'); window.location='products.php'</script>";
+			echo "<script>alert('product Added Successfully'); window.location='products.php'</script>";
 		}else{
-			// echo "<script>alert('Failed to add product'); window.location='products.php'</script>";
+			echo "<script>alert('Failed to add product'); window.location='products.php'</script>";
 		}
         
     }else{
@@ -108,7 +106,7 @@
 		// Name the font to be used (note the lack of the .ttf extension)
 		$font = 'C:\xampp\htdocs\laxmisri\admin\OpenSans-Bold.ttf';
 		$font_size = 20;
-		$marginX = ($width / 2) - (((strlen($watermark) * $font_size) / $width) * ($width / 4));
+		$marginX = 10;//($width / 2) - (((strlen($watermark) * $font_size) / $width) * ($width / 4));
 		$marginY = $height / (2 * 1);
 		imagettftext($image_p, $font_size, 0, $marginX, $marginY, $txtcolor, $font, $watermark);
 		$pa = "../assets/images/products/".$save;
@@ -118,7 +116,8 @@
 			header('Content-Type: image/jpeg');
 			imagejpeg($image_p, null, 100);
 		}
-		imagedestroy($image); 
+		unlink($src);
+		imagedestroy($image);
 		imagedestroy($image_p); 
 	}
 ?>
